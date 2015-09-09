@@ -9,13 +9,33 @@ background-color: white;
 	background-color: white;
 }
 
+input[type=text] {
+	display: block;
+	width: 200px;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: sans-serif;
+	border-radius: 25px;
+
+}
+
 .top-navigation h1 {
 	font-family: 'Homemade Apple', cursive;
 	text-align: center;
 }
 
+.content {
+	width: 600px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .groceries {
 	font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 .bought {
@@ -31,6 +51,7 @@ margin-left: auto;
    margin-right: auto;
        padding-top: 2em;
     padding-bottom: 2em;
+    border-radius: 30px;
 }
 
 ol, ul {
@@ -39,7 +60,7 @@ ol, ul {
 
 .to-do li {
 color: white;
-font-size: 16px;
+font-size: 18px;
 padding-top: 6px;
 padding-bottom: 6px;
 
@@ -53,11 +74,12 @@ margin-left: auto;
     margin-right: auto;
         padding-top: 2em;
     padding-bottom: 2em;
+    border-radius: 30px;
 }
 
 .done li {
 	color: #666666;
-	font-size: 16px;
+	font-size: 18px;
 	padding-top: 6px;
 padding-bottom: 6px;
 }
