@@ -21,6 +21,12 @@ input[type=text] {
 
 }
 
+input[type="reset"] {
+	border-radius: 25px
+	color: red;
+}
+
+
 .top-navigation h1 {
 	font-family: 'Homemade Apple', cursive;
 	text-align: center;
@@ -82,4 +88,12 @@ margin-left: auto;
 	font-size: 18px;
 	padding-top: 6px;
 padding-bottom: 6px;
+}
+@media only screen and (max-width: 500px) {
+    .top-navigation {
+        padding: 3em 0;
+    }
+    .content {
+        font-size: 3em;
+    }
 }
