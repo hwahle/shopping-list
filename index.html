@@ -10,25 +10,26 @@
 	<link href='https://fonts.googleapis.com/css?family=Homemade+Apple|Roboto+Condensed' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<nav class="top-navigation">
-<h1>Shopping List</h1>
-<input type="text" placeholder="+ Item">
-</nav>
-<div class="content">
-	<div class="to-do">
-	<ul class="groceries">
-	<li> <img src="images/complete.png">  Milk</li>
-	<li> <img src="images/complete.png">  Cheese</li>
-	<li> <img src="images/complete.png">  Eggs</li>
-	</ul>
-	</div>
-	<div class="done">
-	<ul class="bought">
-	<li> <img id="re-add">  Sugar  <img src="images/delete.png"></li>
-	<li> <img id="re-add">   Cream  <img src="images/delete.png"></li>
-	<li> <img id="re-add">  Flour  <img src="images/delete.png"></li>
-	</ul>
-	</div>
-	</div>
+    <nav class="top-navigation">
+        <h1>Shopping List</h1>
+        <input id="add-items" type="text" placeholder="+ Item"></input>
+        <button type="submit" id="add-button">+</button>
+    </nav>
+    <div class="content">
+       <div class="to-do">
+           <ul id="groceries">
+               <li class="items"> <img id="complete">  Milk</li>
+               <li class="items"> <img id="complete">  Cheese</li>
+               <li class="items"> <img id="complete">  Eggs</li>
+           </ul>
+       </div>
+       <div class="done">
+           <ul class="bought">
+               <li> <img id="re-add">  Sugar  <img id="delete"></li>
+               <li> <img id="re-add">   Cream  <img id="delete"></li>
+               <li> <img id="re-add">  Flour  <img id="delete"></li>
+           </ul>
+       </div>
+   </div>
 </body>
 </html>
