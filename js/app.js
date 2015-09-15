@@ -7,7 +7,7 @@ $(document).ready(function() {
 	/*  submit button for the input field */
 		$('#add-button').click(function() {
 			if( $('input#add-items').val().trim().length == 0 ) {
-				//alert("add item here");
+				/*alert("add item here")*/
 				$('#error').show();
 				$('input#add-items').val("");
 			} else {
@@ -16,7 +16,13 @@ $(document).ready(function() {
 				$('#error').hide();
 			}
 		})
+
+		/*use complete button to move completed items to done list below*/
+
+
 			});
+
+	
 		
 
 	
