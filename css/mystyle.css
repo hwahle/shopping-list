@@ -136,6 +136,7 @@ ol, ul {
 	border-radius: 100%;
 	border-color: #00cccc;
 	border: 1.5px solid #00cccc;
+	margin-right: 5px;
 }
 
 #complete:hover {
@@ -146,6 +147,7 @@ ol, ul {
 	border-radius: 100%;
 	border-color: #00cccc;
 	border: 1.5px solid #00cccc;
+	margin-right: 5px;
 }
 
 #re-add {
@@ -156,6 +158,7 @@ ol, ul {
 	border-radius: 100%;
 	border-color: #00cccc;
 	border: 1.5px solid #00cccc;
+	margin-right: 5px;
 
 }
 
@@ -167,6 +170,7 @@ ol, ul {
 	border-radius: 100%;
 	border-color: #00cccc;
 	border: 1.5px solid #00cccc;
+	margin-right: 5px;
 }
 
 #delete {
@@ -177,6 +181,7 @@ ol, ul {
 	border-radius: 100%;
 	border-color: #00cccc;
 	border: 1.5px solid #00cccc;
+	margin-left: 5px;
 }
 
 #delete:hover {
@@ -187,6 +192,7 @@ ol, ul {
 	border-radius: 100%;
 	border-color: #00cccc;
 	border: 1.5px solid #00cccc;
+	margin-left: 5px;
 }
 
 @media only screen and (max-width: 500px) {
