@@ -76,7 +76,7 @@ input[type="reset"] {
 	border: 1.5px solid #00cccc;
 }
 
-.bought {
+#bought {
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -128,7 +128,7 @@ ol, ul {
 	padding-bottom: 8px;
 }
 
-#complete {
+.complete {
 	content: url('../images/complete.png');
 	width: 27px;
 	height: 29px;
@@ -139,7 +139,7 @@ ol, ul {
 	margin-right: 5px;
 }
 
-#complete:hover {
+.complete:hover {
 	content: url('../images/complete_hover.png');
 	width: 27px;
 	height: 29px;
@@ -150,7 +150,7 @@ ol, ul {
 	margin-right: 5px;
 }
 
-#re-add {
+.re-add {
 	content: url('../images/readd.png');
 	width: 27px;
 	height: 29px;
@@ -162,7 +162,7 @@ ol, ul {
 
 }
 
-#re-add:hover {
+.re-add:hover {
 	content: url('../images/add-hover.png');
 	width: 27px;
 	height: 29px;
@@ -173,7 +173,7 @@ ol, ul {
 	margin-right: 5px;
 }
 
-#delete {
+.delete {
 	content: url('../images/delete.png');
 	width: 27px;
 	height: 29px;
@@ -184,7 +184,7 @@ ol, ul {
 	margin-left: 5px;
 }
 
-#delete:hover {
+.delete:hover {
 	content: url('../images/delete_hover.png');
 	width: 27px;
 	height: 29px;
