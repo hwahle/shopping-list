@@ -22,9 +22,12 @@ $(document).ready(function() {
 
 	/*use complete button to move completed items to done list below*/
 	todoItem.on('click', function() {
+
 		var reAdd = '<img class="re-add">'
 		var removeItem = '<img class="delete">'
+
 		$('#bought').prepend('<li class="done-items">' + reAdd + $( "li.items:first-child" ).text() + removeItem + '</li>');
+		$(todoItem).detach();
 	})
 		}
 		})
