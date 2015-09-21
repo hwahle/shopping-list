@@ -28,6 +28,10 @@ $(document).ready(function() {
 
 		$('#bought').prepend('<li class="done-items">' + reAdd + item + removeItem + '</li>');
 		$(todoItem).detach();
+
+	$('.delete').click(function() {
+		$(this).parent().remove();
+	})
 	})
 		}
 		})
