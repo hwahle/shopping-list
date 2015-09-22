@@ -13,10 +13,15 @@ $(document).ready(function() {
 			$('#error').show();
 			$('input#add-items').val("");
 		} else {
-			var todoItem = $('<li class="items">' + '<img class="complete">' + $('input#add-items').val() + '</li>')
+			var todoItem = $('<li class="items">' + '<img class="complete">' + $('input#add-items').val() + '<img class="delete">' + '</li>')
 			$('#groceries').prepend(todoItem);
 			$('input#add-items').val("");
 			$('#error').hide();
+
+			$('.delete').click(function() {
+		$(this).parent().remove();
+	})
+
 
 
 
@@ -43,4 +48,5 @@ $(document).ready(function() {
 	})
 		}
 		})
-})
+		})
+
