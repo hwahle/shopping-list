@@ -3,8 +3,6 @@ $(document).ready(function() {
 
 	
 	console.log('Hello');
-	
-
 
 	/*  submit button for the input field */
 	$('#add-button').click(function() {
@@ -22,29 +20,26 @@ $(document).ready(function() {
 		$(this).parent().remove();
 	})
 
-
-
-
 	/*use complete button to move completed items from "to-do" to "done" list*/
 	todoItem.on('click', function() {
 		var item = $(this).text()
 		var reAdd = '<img class="re-add">'
 		var removeItem = '<img class="delete">'
-		
+		var addedItem = $('<li class="done-items">' + reAdd + item + removeItem + '</li>')
 
-		$('#bought').prepend('<li class="done-items">' + reAdd + item + removeItem + '</li>');
+
+		$('#bought').prepend(addedItem);
 		$(todoItem).detach();
 
 		/*re-add items from "done" back to "to-do"*/
-
-		$('.re-add').click(function() {
-			
-
-			$('.items').parent().prepend(todoItem);
-			$(this).parent().detach();
-			
-			
+	
+		
+		$(addedItem).on('click', function() {
+			$('#groceries').append(todoItem);
+			$(this).detach();
+				
 		})
+		
 
 	$('.delete').click(function() {
 		$(this).parent().remove();
