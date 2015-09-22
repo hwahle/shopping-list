@@ -25,7 +25,7 @@ $(document).ready(function() {
 
 
 
-	/*use complete button to move completed items to done list below*/
+	/*use complete button to move completed items from "to-do" to "done" list*/
 	todoItem.on('click', function() {
 		var item = $(this).text()
 		var reAdd = '<img class="re-add">'
@@ -35,13 +35,15 @@ $(document).ready(function() {
 		$('#bought').prepend('<li class="done-items">' + reAdd + item + removeItem + '</li>');
 		$(todoItem).detach();
 
+		/*re-add items from "done" back to "to-do"*/
+
 		$('.re-add').click(function() {
-			$('#groceries').append(todoItem);
+			
+
+			$('.items').parent().prepend(todoItem);
 			$(this).parent().detach();
 			
 			
-			
-
 		})
 
 	$('.delete').click(function() {
