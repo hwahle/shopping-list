@@ -36,7 +36,9 @@ $(document).ready(function() {
 		$(todoItem).detach();
 
 		$('.re-add').click(function() {
-			$(this).parent().append('<li class="items>' + '<img class="complete"' + this + '</li>');
+			$('#groceries').append(todoItem);
+			$(this).parent().detach();
+			
 			
 			
 
