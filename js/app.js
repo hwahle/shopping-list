@@ -25,9 +25,17 @@ $(document).ready(function() {
 		var item = $(this).text()
 		var reAdd = '<img class="re-add">'
 		var removeItem = '<img class="delete">'
+		
 
 		$('#bought').prepend('<li class="done-items">' + reAdd + item + removeItem + '</li>');
 		$(todoItem).detach();
+
+		$('.re-add').click(function() {
+			$(this).parent().append('<li class="items>' + '<img class="complete"' + this + '</li>');
+			
+			
+
+		})
 
 	$('.delete').click(function() {
 		$(this).parent().remove();
