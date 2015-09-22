@@ -9,13 +9,19 @@ body {
 	background-color: white;
 }
 
+.input-area {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #add-items {
 	display: inline-block;
 	width: 200px;
 	margin-top: 1em;
 	margin-bottom: 2em;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 176px;
+	margin-right: 0px;
 	font-family: sans-serif;
 	border-radius: 25px;
 
